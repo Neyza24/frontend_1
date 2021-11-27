@@ -1,0 +1,92 @@
+/* links a las librerias que corresponde, fuentes, iconos */
+ctrl f2 poner un a class a los botones
+
+poner todos los impprt que necesite, arriba
+selector universal
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*pseudoselectores definir variables buena practica,color principal, secundario...*/
+
+/*root para poner variables */
+:root{
+    --color-textos: #000;
+
+}
+
+/* ejemplo de como utilizar variables en los estilos es opcional para el examen */
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: var(--color-textos);
+}
+
+/* acá viene todo lo del header*/
+/*utilizar media query si lo necesitamos, wrap otra opciones*/
+/*flex row y wrap en mobile*/
+
+header{
+
+}
+
+header .logo{
+
+}
+
+header i.fas{
+    display: block; o inline
+}
+
+header .navbar{
+    display:none;
+}
+
+main{
+
+}
+
+.botones{
+    /*cosas comunes a todos los botones*/
+}
+
+
+header .botones{
+    /*estilo personalizado*/
+}
+
+
+
+footer{
+
+}
+
+footer .botones{
+    /*estilo personalizado*/
+}
+
+.botones,
+input[type="submit"]{
+    /*si es que tuvieran estilos similares*/
+
+}
+
+/** 
+media queries para desktop-responsive**/
+
+@media screen and (min-with: 375px){
+    /*siempre que sea mayor a 375pc*/
+    header i.fas{
+        display: none; 
+    }
+    
+    header .navbar{
+        display: flex;
+    }
+
+    
+}

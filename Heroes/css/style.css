@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    width: 100%;
+}
+
+
+body .top {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #1CD1B0;
+    color: white;
+    border-top: solid 1px lightseagreen;
+    padding: 12px 40px;
+    height: 40px;
+    text-align: start; 
+}
+
+
+
+header{
+    position: sticky;
+    top: 0px;
+    background-color: #00669F;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; 
+    width: 100%;
+    gap: 32px;
+    margin-top: 100px;
+    margin-bottom: 120px;
+    padding-left: 80px;
+    padding-right: 80px; 
+}
+
+main > section{
+    display: inline-block;
+    background-color: #f8f8f8;
+    border-radius: 12px;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+main .fondo{
+    border-radius: 12px 0px 0px;
+}
+
+main .perfil{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+main h2{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 16px;
+}
+
+
+main p{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 40px;
+    line-height: 22px;
+}
+
+main a{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 36px;
+    background-color: #00669F;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 12px 32px;
+    width: 50%;
+    margin-left: 64px;
+    color:azure;
+}
+
+
+/*footer check*/
+footer {
+    background-color: #00669F;
+    color: white;
+    border-top: solid 1px lightseagreen;
+    padding: 12px;
+    height: 40px;
+    text-align: center;
+    box-sizing: border-box;    
+}
+
+
+@media  screen and(max-width: 640px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/solid.css"
+        integrity="sha384-LA8Ug4T/nhVkyhrSmSirsoAo9iDrBk8E7U80aSPeD+w3vO8PzOJIS6agGcbIwwX0" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style-form.css">
+</head>
+
+<body>
+    <div class="top">Descuentos 20%</div>
+    <header>
+        <h1>Heroes</h1>
+        <nav>
+            <ul class="categorias">
+                <li><a href="#"> Contacto </a></li>
+                <li><a href="#"> Registrarme </a></li>
+                <li><a href="#"> Ingresar </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <form class="principal" action="action_page.php" target="_blank" method="post">
+        <section class="intro">
+            <h2>Añadí tu super</h2>
+            <p>Agrega tu personaje favorito seleccionando las siguientes opciones</p>
+        </section>
+    
+        <section class="contenedor1">
+                <div class="nombre">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="fecha">
+                    <label for="date">Fecha</label>
+                    <input type="date" name="date" required>
+                </div>
+                <div class="comentario">
+                    <label for="date">Comentarios</label>
+                    <textarea name="message" rows="10" cols="30">Deja tus comentarios</textarea>
+                </div>
+        </section>
+    
+        <section class="contenedor2">
+            <div>
+                <label for="heroes">Heroes</label>
+                <select name="heroes" id="heroes">
+                    <optgroup label="DC">
+                        <option value="Batman">Batman</option>
+                        <option value="Mujer Maravilla">Mujer maravilla</option>
+                    </optgroup>
+                    <optgroup label="Marvel">
+                        <option value="Harley Quiin">Harley Quiin</option>
+                        <option value="Venom">Venom</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <label for="Agregar foto">Agregar foto</label>
+                <input type="file" name="archivo" id="Agregar foto" value="Agregar foto">
+            </div>
+
+            <div>
+                <legend>Poderes</legend>
+                <p>
+                    <label for="Volar">Volar</label>
+                    <input type="checkbox" name="poderes" id="Volar" value="Volar">  
+                </p>
+                
+                <p>
+                    <label for="Super inteligente">Super inteligencia</label>
+                    <input type="checkbox" name="poderes" id="Super inteligente" value="Super inteligente">   
+                </p>
+
+                <p>
+                    <label for="Vista de rayo">Vista de rayo</label>   
+                    <input type="checkbox" name="poderes" id="Vista de rayo" value="Vista de rayo">             
+                </p>
+
+                <p>
+                    <label for="Láser">Lasér</label>
+                    <input type="checkbox" name="poderes" id="Láser" value="Láser">          
+                </p>
+
+                <p>
+                    <label for="Billetera gorda">Billetera gorda</label>
+                    <input type="checkbox" name="poderes" id="Billetera gorda" value="Billetera gorda">
+                </p>
+            </div>
+
+            <div>
+                <legend>Tipo de personaje</legend>
+                <p>
+                    <label for="Héroe/Heroina">Héroe/Heroina</label>
+                    <input type="radio" name="heroe" id="Héroe/Heroina" value="Héroe/Heroina">
+
+                </p>
+                <p>
+                    <label for="Villano/Villana">Villano/Villana</label>
+                    <input type="radio" name="heroe" id="Villano/Villana" value="Villano/Villana"> 
+                </p>
+            </div>
+
+            <div>
+                <input type="submit" value="ENVIAR" onclick="alert('Se envío exitosamente')">
+            </div>
+    </form>
+
+    <footer>
+        <p><small>Todos los derechos reservados a FRONT END 1</small></p>
+    </footer>
+</body>
+
+</html>

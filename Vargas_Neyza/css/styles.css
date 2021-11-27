@@ -1,0 +1,224 @@
+/*Fuente Be-Vietnam Pro*/
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+/*Aplicando selector universal*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-primario: #F3603B;
+    --color-secundario: #232C50;
+    --color-párrafos: #B3B2B7;
+    --color-primario-100: #FEEBD7;
+}
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+    
+    .contenedor, footer{
+        min-width: 375px;
+        margin:0 auto;
+        padding: 2em 1em;
+    }
+
+    /*Header*/
+    header{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .navbar{
+        display: none;  /*-webkit-flex*/
+        justify-content: space-between;
+        gap: 32px;
+    }
+
+
+    nav ul li{
+        list-style: none; 
+    }
+
+    nav ul li a{
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+
+    /*Hero*/
+    .hero{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        gap: 40px;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 80px;
+    }
+
+    .lead-hero h1, p, button{
+        padding-bottom: 32px;
+        
+    }
+
+    .hero h1{
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--color-secundario);
+    }
+
+    .hero p{
+        font-size: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .btn-primario{
+        padding: 12px 32px;
+        border-radius: 50px;
+        border-style: none;
+        background-color: var(--color-primario);
+        color: #fff;
+    }
+
+    .hero img{
+        width: 343px;
+    }
+
+
+
+    /*seccion2*/
+
+    .servicios{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        margin-bottom: 80px;
+    }
+
+    .servicios .detalle-servicios{
+        text-align: left;
+    }
+
+    .detalle-servicios span{
+        background-color: var(--color-primario);
+        padding: 8px 16px;
+        border-radius: 16px;
+        color: #fff;
+        font-size: 14px;
+        margin-right: 12px;
+    }
+
+    .servicios h5{
+        font-size: 16px;
+        font-weight: 700;
+        padding: 8px 0px;
+        border-radius: 16px 4px 4px 16px;
+        color: var(--color-secundario);
+        background-color: #FEEBD7;
+        margin-bottom: 24px;
+    }
+
+
+    /*sección comentarios*/
+
+    .comentarios h3{
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    article img{
+        width: 120px;
+        height: 120px;
+        margin-bottom: 24px;
+    }
+
+
+    /*Lead*/
+
+    .lead{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        background-color: var(--color-primario);
+    }
+
+    .lead h3{
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+
+
+
+    .btn-secundario{
+        padding: 12px 32px;
+        border-radius: 50px;
+        border-style: none;
+        background-color: #fff;
+        color: var(--color-primario)
+    }
+
+
+
+
+
+
+    /*footer*/
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+
+    footer .redes-sociales{
+        display: -webkit-flex;
+        gap: 20px;
+        list-style-type: none;
+    }
+
+
+    .columna2 ul{
+        gap: 20px;
+        list-style-type: none;
+    }
+
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 1200px) and  (min-width: 992px)  { 
+    h1{
+        color:gold;
+    }
+}
